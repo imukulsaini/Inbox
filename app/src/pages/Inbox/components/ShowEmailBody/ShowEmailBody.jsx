@@ -6,11 +6,11 @@ import { AddInFavoriteBtn } from "./components/AddInFavoriteBtn";
 import "./showemailbody.css";
 
 export function ShowEmailBody() {
-  const { bodyStatus, emailBody } = useSelector((state) => state.email);
+  const { bodyStatus, emailBody ,favoritesEmail } = useSelector((state) => state.email);
   const { id, subject, bodyText, date, from } = emailBody;
 
   const formattedDate = formatDate(date);
-
+  const isEmailBodyInFavorite = favoritesEmail?.includes(id)
   return (
     <div className={bodyStatus ? "email-body" : "display-hidden"}>
       <div className="email-body__header">
@@ -28,9 +28,16 @@ export function ShowEmailBody() {
             <span className="email-header__time">{formattedDate}</span>
           </div>
         </div>
-
+        {
+          
+        }
         <div className="email-header__right">
-          <AddInFavoriteBtn emailID={id} />
+          
+          {
+            isEmailBodyInFavorite ? <span className="fav__info">In Favorites</span> :
+            <AddInFavoriteBtn emailID={id} />
+          
+          }
         </div>
       </div>
       <div className="email-body__des">{parse(bodyText)}</div>
