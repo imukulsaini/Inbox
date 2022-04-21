@@ -9,7 +9,7 @@ import { saveStateInLocalStorage } from "./localStorage";
 store.subscribe(() => {
   saveStateInLocalStorage({
     readEmails: store.getState().email.readEmails,
-    favoriteEmails: store.getState().email.favoritesEmail,
+    favoritesEmail: store.getState().email.favoritesEmail,
   });
 });
 

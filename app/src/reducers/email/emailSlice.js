@@ -6,7 +6,7 @@ const initialState = {
   emails: [],
   emailBody: {},
   readEmails: [],
-  favoritesEmail: [],
+  favoritesEmails: [],
   bodyStatus: false,
   error: "",
 };
