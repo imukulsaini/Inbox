@@ -1,0 +1,69 @@
+.email__container {
+  background-color: var(--white);
+  display: flex;
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 9.5rem;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.border-highlight{
+  border: 1px solid var(--highlight);
+
+}
+.unread{
+  background-color: var(--background-secondary);
+}
+.email__avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: inherit;
+}
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.highlight__info{
+  background-color: inherit;
+  padding-left: 0.2rem;
+}
+.email__right {
+  background-color: inherit;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.2rem;
+  color:var(--text-color);
+}
+.email__address{
+  background-color: inherit;
+}
+.email__subject{
+  background-color: inherit;
+}
+.email__des {
+  background-color: inherit;
+  width: 90%;
+  height: 5rem;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.2rem;
+}
+.email__date{
+  background-color: inherit;
+}
+.email__isfavorite{
+  color:var(--highlight);
+  font-weight: 600;
+  background-color: inherit;
+}
+.email__footer {
+  background-color: inherit;
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 2rem;
+}

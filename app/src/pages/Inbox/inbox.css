@@ -1,0 +1,42 @@
+.App {
+    width: 100%;
+    height: 100%;
+  }
+  .show-emails {
+    width: 100%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .inbox__main {
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem 3rem 2rem 3rem;
+  }
+  .width-50 {
+    width: 50%;
+  }
+  
+  .flx {
+    display: flex;
+    gap: 3rem;
+  }
+  .email__page-actions {
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .page__btn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .page__btn-selected {
+    color: var(--white);
+    background-color: var(--highlight);
+  }

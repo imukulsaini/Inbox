@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background-primary: #f4f5f9;
+  --background-secondary: #f2f2f2;
+  --border: #cfd2dc;
+  --button-primary: #e1e4ea;
+  --text-color: #636363;
+  --highlight: #e54065;
+  --white:#ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-primary);
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+

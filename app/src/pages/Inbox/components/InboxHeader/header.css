@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+.header-name {
+  width: 5rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+.header__nav-info {
+  display: flex;
+  margin-left: 1rem;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header__nav-item {
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.selected-route {
+  background-color: var(--button-primary);
+  border: 1px solid var(--border);
+}
