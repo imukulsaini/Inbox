@@ -22,9 +22,8 @@ export function Inbox() {
     dispatch(getEmailList({ number: 1 }));
   }, []);
 
-  const memoizedEmail = useMemo(() => emails, [emails]);
 
-  const filteredEmails = getFilteredEmails(memoizedEmail?.list, filterRoute, {
+  const filteredEmails = getFilteredEmails(emails?.list, filterRoute, {
     favoritesEmail,
     readEmails,
   });
@@ -51,7 +50,7 @@ export function Inbox() {
         {bodyStatus && <ShowEmailBody />}
       </section>
       {filterRoute !== "favorites" && (
-        <Pagination totalEmails={memoizedEmail?.total} />
+        <Pagination totalEmails={emails?.total} />
       )}
     </div>
   );
